@@ -9,3 +9,7 @@ variable "environment" {
 variable "instance" {
   default = "default"
 }
+
+variable "capacity" {
+  default = "1024"
+}
