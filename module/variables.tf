@@ -5,3 +5,7 @@ variable "client_name" {
 variable "environment" {
   default = "test"
 }
+
+variable "instance" {
+  default = "default"
+}
