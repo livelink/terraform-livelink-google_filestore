@@ -9,7 +9,7 @@ resource google_filestore_instance filestore {
   name = random_string.filestore_name.result
   tier = "STANDARD"
   zone = "${local.resource_location}-a"
-  depends_on = [ "google_project_service.filestore_api" ]
+  depends_on = [ google_project_service.filestore_api ]
   file_shares {
     capacity_gb = var.capacity
     name =  random_string.filestore_name.result
